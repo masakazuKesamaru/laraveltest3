@@ -1,12 +1,8 @@
-@import 'tailwindcss';
+/* Tailwind の基本レイヤーを読み込む */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source "../**/*.blade.php";
-@source "../**/*.js";
-@source "../**/*.vue";
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+/* Flowbite (JS ではなく CSS を取り込む場合) */
+@import 'flowbite';
+@import "../../node_modules/flowbite-datepicker/dist/css/datepicker.min.css";
