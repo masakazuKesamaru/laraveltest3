@@ -20,3 +20,9 @@ Route::get('/members/{id}', function ($id) {
     return view('members.show', ['id' => $id, 'name' => $member_name]);
 })->name('members.show');
 
+// 値を保存
+Route::get('/members/{id}/create', function ($id) {
+
+    return view('members.create', ['id' => $id]);
+})->name('members.create');
+

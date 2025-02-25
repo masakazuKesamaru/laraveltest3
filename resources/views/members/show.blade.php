@@ -114,7 +114,6 @@
                                             <option selected>選択してください</option>
                                             <option value="US">good</option>
                                             <option value="CA">better</option>
-                                            <option value="FR">usually</option>
                                             <option value="DE">bad</option>
                                         </select>
                                     </div>
@@ -130,11 +129,17 @@
                                     </div>
                                 </div>
                                 <div>
+                                    <a href="{{ route('members.create',  $id) }}"
+                                        class="text-white items-center bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">
+                                        保存
+                                    </a>
+                                </div>
+                                {{-- <div>
                                     <button type="submit"
                                         class="text-white items-center bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">
                                         保存
                                     </button>
-                                </div>
+                                </div> --}}
                             </form>
                             <div class="pt-0 px-4 md:pt-0 md:px-5">
                                 <button
